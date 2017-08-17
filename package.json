@@ -1,6 +1,6 @@
 {
 	"projects": [
-		"1990st"
+		"app"
 	],
 	"name": "steffens",
 	"version": "0.0.1",
@@ -13,6 +13,7 @@
 	],
 	"dependencies": {
 		"angular": "1.5.9",
+		"animejs": "^2.0.2",
 		"axios": "^0.15.3",
 		"core-js": "^2.4.1",
 		"flatpickr": "^2.6.1",
