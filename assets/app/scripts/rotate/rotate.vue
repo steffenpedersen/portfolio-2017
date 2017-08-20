@@ -4,25 +4,44 @@ import anime from 'animejs';
 
 export default Vue.directive('rotate', {
 	inserted(el) {
-		const scroll = window.pageYOffset;
+		// const scrollY = window.scrollY;
+		const timelineParameters = anime.timeline({
+		});
 
-		if (scrollY > 800) {
 
-			var timelineParameters = anime.timeline({
+			window.addEventListener('scroll', () => {
+				const scrollY = window.scrollY;
+				if (scrollY >= 800) {
+					console.log('> 800');
+					const alternate = anime({
+						targets: el,
+						rotate: 90,
+						easing: 'easeInQuad',
+					});
+				}
+				if (scrollY < 800) {
+					console.log('< 800');
+					const alternate = anime({
+						targets: el,
+						rotate: -90,
+						easing: 'easeInQuad',
+					});
+				}
 			});
 
-			timelineParameters
-				.add({
-					targets: el,
-					rotate: [
-						{ value: -90 },
-						{ value: 90 },
-					],
-					duration: 300,
-					elasticity: 400,
-				});
-
-			}
+		//
+		// if (scrollY < 800) {
+		// 	console.log('< 800');
+		// 	timelineParameters
+		// 		.add({
+		// 			targets: el,
+		// 			rotate: [
+		// 				{ value: 90 },
+		// 				{ value: -90 },
+		// 			],
+		// 			easing: 'easeInQuad',
+		// 		});
+		// }
 	},
 });
 

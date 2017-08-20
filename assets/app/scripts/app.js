@@ -10,6 +10,7 @@ import 'fade-in';
 import 'fade-down';
 import 'menu-open';
 import 'menu-close';
+// import 'words';
 // import 'rotate';
 
 new Vue({

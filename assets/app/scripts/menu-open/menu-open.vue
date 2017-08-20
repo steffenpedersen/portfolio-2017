@@ -5,9 +5,10 @@ import anime from 'animejs';
 export default Vue.directive('menu-open', {
 	inserted(el) {
 		function open() {
-			// open menu
 			const menu = document.body.getElementsByClassName('menu');
 			const relativeOffset = anime.timeline();
+
+			document.body.style.overflowY = 'hidden';
 
 			relativeOffset
 				.add({
@@ -26,11 +27,20 @@ export default Vue.directive('menu-open', {
 					},
 				})
 				.add({
-					targets: '.topic-web',
+					targets: '.menu-overlay',
 					translateY: [
-						{ value: -250 },
+						{ value: -500 },
 						{ value: 0 },
 					],
+					opacity: [
+						{ value: 0 },
+						{ value: 0.95 },
+					],
+					easing: 'easeInQuad',
+					offset: '-=1000',
+				})
+				.add({
+					targets: '.menu-about',
 					opacity: [
 						{ value: 0 },
 						{ value: 1 },
@@ -39,24 +49,7 @@ export default Vue.directive('menu-open', {
 					offset: '-=300',
 				})
 				.add({
-					targets: '.topic-design',
-					translateY: [
-						{ value: -250 },
-						{ value: 0 },
-					],
-					opacity: [
-						{ value: 0 },
-						{ value: 1 },
-					],
-					easing: 'easeOutExpo',
-					offset: '-=900',
-				})
-				.add({
-					targets: '.topic-writing',
-					translateY: [
-						{ value: -250 },
-						{ value: 0 },
-					],
+					targets: '.menu-work',
 					opacity: [
 						{ value: 0 },
 						{ value: 1 },

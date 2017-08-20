@@ -1,7 +1,3 @@
-body, html {
-	overflow: hidden; // parallax
-}
-
 * {
 	margin:0;
 	padding:0;
@@ -10,10 +6,6 @@ body, html {
 body {
 	background-color: $color-white;
 	color: $color-black;
-	overflow: hidden;
-}
-
-main {
 }
 
 .wrapper {
@@ -50,7 +42,7 @@ h3 {
 
 p {
 	font-family: 'poppinsbold', sans-serif;
-	font-size: $font-lg;
+	font-size: 30px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	line-height: 1.3;
@@ -67,7 +59,7 @@ a {
 	color: $color-black;
 	text-decoration: none;
 	position: relative;
-	cursor: url('~static/cursor-metal.png') 44 45, auto;
+	cursor: url('~static/cursor-metal.png') 22 23, auto;
 }
 
 ::selection {
@@ -91,77 +83,27 @@ p {
 ul,
 ol {
 	list-style: none;
-	li {
-		position: relative;
-		font-family: 'poppinsbold', sans-serif;
-		font-size: $font-sm;
-		font-weight: 700;
-		letter-spacing: 1px;
-		padding-left: 30px;
-		margin-bottom: 12px;
-		&::before {
-			content: '';
-			position: absolute;
-			height: 8px;
-			width: 20px;
-			background-color: $color-yellow;
-			top: 50%;
-			left: 0;
-			transform: translateY(-50%);
-		}
-	}
+	// li {
+	// 	position: relative;
+	// 	font-family: 'poppinsbold', sans-serif;
+	// 	font-size: $font-sm;
+	// 	font-weight: 700;
+	// 	letter-spacing: 1px;
+	// 	padding-left: 30px;
+	// 	margin-bottom: 12px;
+	// 	&::before {
+	// 		content: '';
+	// 		position: absolute;
+	// 		height: 8px;
+	// 		width: 20px;
+	// 		background-color: $color-yellow;
+	// 		top: 50%;
+	// 		left: 0;
+	// 		transform: translateY(-50%);
+	// 	}
+	// }
 }
 
 ul ul {
 	margin-bottom: 0;
-}
-
-// parallax
-
-.content {
-	height: 600px;
-	position: relative;
-	background-color: #000;
-}
-
-/* Parallax base styles
-	--------------------------------------------- */
-
-.parallax {
-	height: 500px; // fallback for older browsers
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: auto;
-	-webkit-perspective: 100px;
-	perspective: 100px;
-	-webkit-perspective-origin-x: 100%;
-	perspective-origin-x: 100%;
-}
-.parallax-group {
-	position: relative;
-	// height: 500px;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-
-.parallax-layer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	-webkit-transform-origin-x: 112.5%;
-	transform-origin-x: 112.5%;
-}
-
-.parallax-layer-base {
-	-webkit-transform: translateZ(-20px) scale(1.2);
-	transform: translateZ(-20px) scale(1.2);
-	z-index: -1;
-}
-
-.parallax-layer-back {
-	-webkit-transform: translateZ(-10px) scale(1.1);
-	transform: translateZ(-10px) scale(1.1);
-	z-index: -1;
 }

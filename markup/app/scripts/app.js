@@ -9940,6 +9940,7 @@ __webpack_require__(42);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// import 'words';
 // import 'rotate';
 
 new _vue2.default({
@@ -10494,33 +10495,32 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _vue2.default.directive('menu-close', {
 	inserted: function inserted(el) {
 		function close() {
-			// open menu
 			var menu = document.body.getElementsByClassName('menu');
 			var relativeOffset = _animejs2.default.timeline();
 
+			document.body.style.overflowY = 'visible';
+
 			relativeOffset.add({
-				targets: '.topic-web',
-				translateY: [{ value: 0 }, { value: -250 }],
+				targets: '.menu-work',
 				opacity: [{ value: 1 }, { value: 0 }],
 				easing: 'easeOutExpo'
 			}).add({
-				targets: '.topic-design',
-				translateY: [{ value: 0 }, { value: -250 }],
+				targets: '.menu-about',
 				opacity: [{ value: 1 }, { value: 0 }],
 				easing: 'easeOutExpo',
-				offset: '-=900'
+				offset: '-=800'
 			}).add({
-				targets: '.topic-writing',
-				translateY: [{ value: 0 }, { value: -250 }],
-				opacity: [{ value: 1 }, { value: 0 }],
+				targets: '.menu-overlay',
+				translateY: [{ value: 0 }, { value: -500 }],
+				opacity: [{ value: 0.95 }, { value: 0 }],
 				easing: 'easeOutExpo',
-				offset: '-=900'
+				offset: '-=600'
 			}).add({
 				targets: '.menu',
 				translateY: [{ value: 0 }, { value: -500 }],
 				opacity: [{ value: 1 }, { value: 0 }],
 				easing: 'easeInQuad',
-				offset: '-=900', // Starts 600ms before the previous animation ends
+				offset: '-=1200', // Starts 600ms before the previous animation ends
 				complete: function complete() {
 					menu[0].style.pointerEvents = 'none';
 				}
@@ -10555,9 +10555,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _vue2.default.directive('menu-open', {
 	inserted: function inserted(el) {
 		function open() {
-			// open menu
 			var menu = document.body.getElementsByClassName('menu');
 			var relativeOffset = _animejs2.default.timeline();
+
+			document.body.style.overflowY = 'hidden';
 
 			relativeOffset.add({
 				targets: '.menu',
@@ -10568,20 +10569,18 @@ exports.default = _vue2.default.directive('menu-open', {
 					menu[0].style.pointerEvents = 'auto';
 				}
 			}).add({
-				targets: '.topic-web',
-				translateY: [{ value: -250 }, { value: 0 }],
+				targets: '.menu-overlay',
+				translateY: [{ value: -500 }, { value: 0 }],
+				opacity: [{ value: 0 }, { value: 0.95 }],
+				easing: 'easeInQuad',
+				offset: '-=1000'
+			}).add({
+				targets: '.menu-about',
 				opacity: [{ value: 0 }, { value: 1 }],
 				easing: 'easeOutExpo',
 				offset: '-=300'
 			}).add({
-				targets: '.topic-design',
-				translateY: [{ value: -250 }, { value: 0 }],
-				opacity: [{ value: 0 }, { value: 1 }],
-				easing: 'easeOutExpo',
-				offset: '-=900'
-			}).add({
-				targets: '.topic-writing',
-				translateY: [{ value: -250 }, { value: 0 }],
+				targets: '.menu-work',
 				opacity: [{ value: 0 }, { value: 1 }],
 				easing: 'easeOutExpo',
 				offset: '-=900'

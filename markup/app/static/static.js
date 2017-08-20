@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 28);
+/******/ 	return __webpack_require__(__webpack_require__.s = 32);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,33 +71,37 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./cursor-metal.png": 2,
-	"./icons/android-icon-144x144.png": 3,
-	"./icons/android-icon-192x192.png": 4,
-	"./icons/android-icon-36x36.png": 5,
-	"./icons/android-icon-48x48.png": 6,
-	"./icons/android-icon-72x72.png": 7,
-	"./icons/android-icon-96x96.png": 8,
-	"./icons/apple-icon-114x114.png": 9,
-	"./icons/apple-icon-120x120.png": 10,
-	"./icons/apple-icon-144x144.png": 11,
-	"./icons/apple-icon-152x152.png": 12,
-	"./icons/apple-icon-180x180.png": 13,
-	"./icons/apple-icon-57x57.png": 14,
-	"./icons/apple-icon-60x60.png": 15,
-	"./icons/apple-icon-72x72.png": 16,
-	"./icons/apple-icon-76x76.png": 17,
-	"./icons/apple-icon-precomposed.png": 18,
-	"./icons/apple-icon.png": 19,
-	"./icons/favicon-16x16.png": 20,
-	"./icons/favicon-32x32.png": 21,
-	"./icons/favicon-96x96.png": 22,
-	"./icons/favicon.ico": 1,
-	"./icons/ms-icon-144x144.png": 23,
-	"./icons/ms-icon-150x150.png": 24,
-	"./icons/ms-icon-310x310.png": 25,
-	"./icons/ms-icon-70x70.png": 26,
-	"./me.jpg": 27
+	"./ai/roll.ai": 1,
+	"./cursor-metal.png": 3,
+	"./icons/android-icon-144x144.png": 4,
+	"./icons/android-icon-192x192.png": 5,
+	"./icons/android-icon-36x36.png": 6,
+	"./icons/android-icon-48x48.png": 7,
+	"./icons/android-icon-72x72.png": 8,
+	"./icons/android-icon-96x96.png": 9,
+	"./icons/apple-icon-114x114.png": 10,
+	"./icons/apple-icon-120x120.png": 11,
+	"./icons/apple-icon-144x144.png": 12,
+	"./icons/apple-icon-152x152.png": 13,
+	"./icons/apple-icon-180x180.png": 14,
+	"./icons/apple-icon-57x57.png": 15,
+	"./icons/apple-icon-60x60.png": 16,
+	"./icons/apple-icon-72x72.png": 17,
+	"./icons/apple-icon-76x76.png": 18,
+	"./icons/apple-icon-precomposed.png": 19,
+	"./icons/apple-icon.png": 20,
+	"./icons/favicon-16x16.png": 21,
+	"./icons/favicon-32x32.png": 22,
+	"./icons/favicon-96x96.png": 23,
+	"./icons/favicon.ico": 2,
+	"./icons/ms-icon-144x144.png": 24,
+	"./icons/ms-icon-150x150.png": 25,
+	"./icons/ms-icon-310x310.png": 26,
+	"./icons/ms-icon-70x70.png": 27,
+	"./me.jpg": 28,
+	"./roll-mobile.png": 29,
+	"./roll.jpg": 30,
+	"./roll.png": 31
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -120,166 +124,190 @@ webpackContext.id = 0;
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "static/icons/favicon.ico";
+module.exports = __webpack_require__.p + "static/ai/roll.ai";
 
 /***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/cursor-metal.png";
+module.exports = __webpack_require__.p + "static/icons/favicon.ico";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/android-icon-144x144.png";
+module.exports = __webpack_require__.p + "/static/cursor-metal.png";
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/android-icon-192x192.png";
+module.exports = __webpack_require__.p + "/static/icons/android-icon-144x144.png";
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/android-icon-36x36.png";
+module.exports = __webpack_require__.p + "/static/icons/android-icon-192x192.png";
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/android-icon-48x48.png";
+module.exports = __webpack_require__.p + "/static/icons/android-icon-36x36.png";
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/android-icon-72x72.png";
+module.exports = __webpack_require__.p + "/static/icons/android-icon-48x48.png";
 
 /***/ }),
 /* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/android-icon-96x96.png";
+module.exports = __webpack_require__.p + "/static/icons/android-icon-72x72.png";
 
 /***/ }),
 /* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-114x114.png";
+module.exports = __webpack_require__.p + "/static/icons/android-icon-96x96.png";
 
 /***/ }),
 /* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-120x120.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-114x114.png";
 
 /***/ }),
 /* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-144x144.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-120x120.png";
 
 /***/ }),
 /* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-152x152.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-144x144.png";
 
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-180x180.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-152x152.png";
 
 /***/ }),
 /* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-57x57.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-180x180.png";
 
 /***/ }),
 /* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-60x60.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-57x57.png";
 
 /***/ }),
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-72x72.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-60x60.png";
 
 /***/ }),
 /* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-76x76.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-72x72.png";
 
 /***/ }),
 /* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon-precomposed.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-76x76.png";
 
 /***/ }),
 /* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/apple-icon.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon-precomposed.png";
 
 /***/ }),
 /* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/favicon-16x16.png";
+module.exports = __webpack_require__.p + "/static/icons/apple-icon.png";
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/favicon-32x32.png";
+module.exports = __webpack_require__.p + "/static/icons/favicon-16x16.png";
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/favicon-96x96.png";
+module.exports = __webpack_require__.p + "/static/icons/favicon-32x32.png";
 
 /***/ }),
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/ms-icon-144x144.png";
+module.exports = __webpack_require__.p + "/static/icons/favicon-96x96.png";
 
 /***/ }),
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/ms-icon-150x150.png";
+module.exports = __webpack_require__.p + "/static/icons/ms-icon-144x144.png";
 
 /***/ }),
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/ms-icon-310x310.png";
+module.exports = __webpack_require__.p + "/static/icons/ms-icon-150x150.png";
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/icons/ms-icon-70x70.png";
+module.exports = __webpack_require__.p + "/static/icons/ms-icon-310x310.png";
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "/static/me.jpg";
+module.exports = __webpack_require__.p + "/static/icons/ms-icon-70x70.png";
 
 /***/ }),
 /* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/static/me.jpg";
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/static/roll-mobile.png";
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/static/roll.jpg";
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "/static/roll.png";
+
+/***/ }),
+/* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(0);

@@ -5,17 +5,14 @@ import anime from 'animejs';
 export default Vue.directive('menu-close', {
 	inserted(el) {
 		function close() {
-			// open menu
 			const menu = document.body.getElementsByClassName('menu');
 			const relativeOffset = anime.timeline();
 
+			document.body.style.overflowY = 'visible';
+
 			relativeOffset
 				.add({
-					targets: '.topic-web',
-					translateY: [
-						{ value: 0 },
-						{ value: -250 },
-					],
+					targets: '.menu-work',
 					opacity: [
 						{ value: 1 },
 						{ value: 0 },
@@ -23,30 +20,26 @@ export default Vue.directive('menu-close', {
 					easing: 'easeOutExpo',
 				})
 				.add({
-					targets: '.topic-design',
-					translateY: [
-						{ value: 0 },
-						{ value: -250 },
-					],
+					targets: '.menu-about',
 					opacity: [
 						{ value: 1 },
 						{ value: 0 },
 					],
 					easing: 'easeOutExpo',
-					offset: '-=900',
+					offset: '-=800',
 				})
 				.add({
-					targets: '.topic-writing',
+					targets: '.menu-overlay',
 					translateY: [
 						{ value: 0 },
-						{ value: -250 },
+						{ value: -500 },
 					],
 					opacity: [
-						{ value: 1 },
+						{ value: 0.95 },
 						{ value: 0 },
 					],
 					easing: 'easeOutExpo',
-					offset: '-=900',
+					offset: '-=600',
 				})
 				.add({
 					targets: '.menu',
@@ -59,7 +52,7 @@ export default Vue.directive('menu-close', {
 						{ value: 0 },
 					],
 					easing: 'easeInQuad',
-					offset: '-=900', // Starts 600ms before the previous animation ends
+					offset: '-=1200', // Starts 600ms before the previous animation ends
 					complete() {
 						menu[0].style.pointerEvents = 'none';
 					},
